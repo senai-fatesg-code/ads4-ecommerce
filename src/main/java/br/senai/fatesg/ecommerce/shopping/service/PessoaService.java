@@ -2,9 +2,11 @@ package br.senai.fatesg.ecommerce.shopping.service;
 
 import br.senai.fatesg.ecommerce.shopping.interfaces.IService;
 import br.senai.fatesg.ecommerce.shopping.model.Pessoa;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class PessoaService implements IService<Pessoa, Integer> {
 
     @Override

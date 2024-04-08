@@ -2,9 +2,11 @@ package br.senai.fatesg.ecommerce.shopping.service;
 
 import br.senai.fatesg.ecommerce.shopping.interfaces.IService;
 import br.senai.fatesg.ecommerce.shopping.model.Endereco;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class EnderecoService implements IService<Endereco, Integer> {
     @Override
     public Endereco create(Endereco entity) {
