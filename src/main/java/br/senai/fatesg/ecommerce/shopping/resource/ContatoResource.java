@@ -94,7 +94,7 @@ public class ContatoResource implements IResource<Contato, Integer> {
         log.info("Resource: {}, método: {}",
                 ContatoService.class.getCanonicalName(),
                 ContatoService.class.getEnclosingMethod().getName());
-        
+
         contatoService.delete(id);
 
     }
