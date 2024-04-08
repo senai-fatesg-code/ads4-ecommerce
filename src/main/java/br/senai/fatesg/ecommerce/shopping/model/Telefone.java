@@ -1,8 +1,6 @@
 package br.senai.fatesg.ecommerce.shopping.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -25,6 +23,7 @@ public class Telefone extends BaseModel {
     private LocalDateTime dataFim;
 
     //TODO Fazer relacionamento
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Contato contato;
 
 
