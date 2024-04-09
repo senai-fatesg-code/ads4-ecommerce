@@ -169,7 +169,7 @@ public class AlunoResource implements IResource<Aluno, Integer> {
 
 ### Status globais
 * 400 - geralmente erro de negócio
-* 405 - formato de envio inválido
+* 405 - método não permitido (ht)
 * 407 - proxy
 * 401 - não autorizado
 * 403 - acesso negado
