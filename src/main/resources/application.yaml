@@ -25,8 +25,28 @@ spring:
     charset: ${SPRING_BANNER_CHARSET} #UTF-8;
     location: ${SPRING_BANNER_LOCATION} #classpath:/banner.txt;
 
-    #Logging
-    logging:
-      level:
-        br.senai.fatesg.ecommerce.shopping: info
-        org.springframework.web: info
+  #Logging
+  logging:
+    level:
+      br.senai.fatesg.ecommerce.shopping: info
+      org.springframework.web: info
+
+#Configuração do JPA para uso do Hibernate
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    database: postgresql
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+#Configuração da origem do banco de dados
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    name: postgres
+    url: jdbc:postgresql://10.88.0.2:5432/northwind
+    username: postgres
+    password: 123456
+
+
